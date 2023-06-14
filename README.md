@@ -22,14 +22,14 @@ Here are some examples:
 ```smalltalk
 "Fill a template based on JSON data"
 DocxTemplate new 
-	zip: '<Location of my .docx>';
-	json: '{ "name" : "mustache" }';
+	zip: '<Location of my .docx>'
+	json: '{ "name" : "mustache" }'
 	out: '<Location of the new, filled .docx>'.
 	
 "Fill a template based on an Array"
 DocxTemplate new 
-	zip: '<Location of my .docx>';
-	array: { 'name' -> 'mustache' };
+	zip: '<Location of my .docx>'
+	array: { 'name' -> 'mustache' }
 	out: '<Location of the new, filled .docx>'.
 ```
 
