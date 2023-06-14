@@ -9,7 +9,7 @@ Evaluate in Pharo:
 
 Metacello new
 	baseline: 'DocxTemplater';
-	repository: 'github.com//MatFluor/DocxTemplate';
+	repository: 'github.com//MatFluor/DocxTemplate:main';
 	load
 
 ```
