@@ -65,9 +65,9 @@ DocxTemplate >> currentDoc: anObject [
 DocxTemplate >> readZipNamed: aFilename [
 
 	| z |
-	self tempStorage ifNil: [ self createMemoryFS].
+	self tempStorage ifNil: [ self createMemoryFS ].
 	z := ZipArchive new readFrom:
-		     'C:\Users\matfl\Desktop\Begleitbrief Vermietung.docx'.
+		     aFilename.
 	z extractAllTo: tempStorage / 'workingDocx'.
 	z close.
 	currentDoc := (tempStorage / 'workingDocx/word/document.xml')
